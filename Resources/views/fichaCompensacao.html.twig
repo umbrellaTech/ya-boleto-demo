@@ -1,0 +1,162 @@
+{% extends "layout.html.twig" %}
+
+{% block compensacao %}
+<div id="ficha_compensacao">
+    <!--  cabecalho  -->
+    <div class="cabecalho">
+        <div class="banco_logo ">
+            {% block logo%}{% endblock %}
+        </div>
+        <div class="banco_codigo ">{{ model.getConvenio().getBanco().getNumero()}} - {{ model.getConvenio().getBanco().getCodigo() }}</div>
+        <div class="linha_digitavel  last">{{ model.getLinhaDigitavel() }}</div>
+    </div>
+
+    <div id="colunaprincipal" class="">
+        <!--  linha1  -->
+        <!--local de pagamento-->
+        <div class="local_pagamento item">
+            <label>Local de Pagamento</label>
+            {{ 'LocalPagamento' }}
+        </div>
+
+        <!--  linha2  -->
+        <!--Cedente-->
+        <div class="cedente item">
+            <label>Cedente </label>
+            {{ model.getCedente().getNome() }}
+        </div>
+
+        <!--  linha3  -->
+        <div class="linha">
+            <!--data emissao-->
+            <div class="data_doc item">
+                <label>Data do documento</label>
+               {{ model.getDataDocumento()|date('d/m/Y') }}
+            </div>
+            <!--numdocumento-->
+            <div class="num_doc item">
+                <label>Número do documento</label>
+                {{ model.getNumeroDocumento() }}
+            </div>
+            <!--especiedocumento-->
+            <div class="espec_doc item">
+                <label>Espécie Doc.</label>
+                {{ 'Dinheiro' }}
+            </div>
+            <!--aceite-->
+            <div class="aceite item">
+                <label>Aceite</label>
+
+            </div>
+            <!--data processamento-->
+            <div class="dt_proc item">
+                <label>Data proc</label>
+                {{ "now"|date("d/m/Y") }}
+            </div>
+        </div>
+
+        <!--  linha4  -->
+        <div class="linha">
+            <!--uso do banco-->
+            <div class="uso_banco item">
+                <label>Uso do Banco</label>
+
+            </div>
+            <!--carteira-->
+            <div class="carteira item">
+                <label>Carteira</label>
+                {{ model.getConvenio().getCarteira().getNumero() }}
+            </div>
+            <!--especie moeda-->
+            <div class="moeda item">
+                <label>Moeda</label>
+                R$
+            </div>
+            <!--quantidade-->
+            <div class="qtd item">
+                <label>Quantidade</label>
+                {{ '0' }}
+            </div>
+            <!--valor-->
+            <div class="valor item">
+                <label>(x) Valor</label>
+                {{ model.getValorDocumento() }}
+            </div>
+        </div>
+
+        <!--  instrucoes/mensagens  -->
+        <div class="mensagens ">
+            <label>Instruções (Texto de responsabilidade do cedente)</label>
+            {% for instrucao in model.getInstrucoes() %}
+                {{ instrucao }} <br>
+            {% endfor %}
+        </div>
+
+    </div>
+    <!--Coluna direita-->
+    <div id="colunadireita" class="">
+        <div class="">
+            <label>Vencimento</label>
+            {{ model.getVencimento()|date("d/m/Y") }}
+        </div>
+        <div class="">
+            <label>Agência / Código cedente </label>
+            {{ model.getConvenio().getBanco().getAgenciaConta() }}
+        </div>
+        <div class="">
+            <label>Nosso número</label>
+            {{ model.getConvenio().getCarteira().getNossoNumero() }}
+        </div>
+        <div class="">
+            <label>(=) Valor do documento</label>
+            {{ model.getValorDocumento() }}
+        </div>
+        <div class="">
+            <label>(-) Desconto/Abatimento</label>
+            {{ model.getDesconto() }}
+        </div>
+        <div class="">
+            <label>(-) Outras deduções</label>
+            {{ model.getOutrasDeducoes() }}
+        </div>
+        <div class="">
+            <label>(+) Mora/Multa</label>
+            {{ model.getMulta() }}
+        </div>
+        <div class="">
+            <label>(+) Outros Acréscimos</label>
+            {{ model.getOutrosAcrescimos() }}
+        </div>
+        <div class="">
+            <label>(=) Valor cobrado</label>
+        </div>
+    </div>
+
+    <!--  sacado  -->
+    <div id="sacado" class="">
+        <div class="">
+            <label>Sacado</label>
+            {{ model.getSacado().getTipo().getNome() }}
+            <br>
+            {{ model.getSacado().getTipo().getCpf() }}
+        </div>
+    </div>
+
+    <!--  codigo_barras  -->
+    <div id="codigo_barras" class="">
+        <div>
+            <label>Sacador/Avalista</label>
+            {{ model.getSacado().getTipo().getNome() }}
+        </div>
+        <div class="">
+            <span>Ficha de Compensação</span>
+            <label>Autenticação Mecânica</label>
+        </div>
+    </div>
+
+    <!--Linha pontilhada para corte-->
+    <div class="linha_corte"><label>Corte na linha pontilhada</label></div>
+
+    <!--Encerra ficha de compensação-->    
+</div>
+{% endblock %}

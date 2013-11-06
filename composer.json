@@ -34,7 +34,7 @@
         "psr-0": {
             "Umbrella\\YA\\Demo": ""
         },
-        "classmap": ["../ya-boleto-php", "../ya-boleto-view", "../ya-boleto-api"]
+        "classmap": ["../ya-boleto-php", "../ya-boleto-api"]
     },
     "target-dir": "Umbrella/YA/Demo"
 }
