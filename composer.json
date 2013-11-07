@@ -1,7 +1,7 @@
 {
     "name": "umbrella/demo",
     "type": "library",
-    "description": "Demonstracao ",
+    "description": "Demonstracao",
     "keywords": [],
     "homepage": "http://umbrellatech.com/boleto",
     "license": "MIT",
@@ -12,15 +12,15 @@
         },
         {
             "name": "Mikhail Leite Cavalcanti",
-            "homepage": "mikhailcavalcanti@gmail.com"
+            "email": "mikhailcavalcanti@gmail.com"
         },
         {
             "name": "Genison Ribeiro de Paiva Junior",
-            "homepage": "genison@gmail.com"
+            "email": "genison@gmail.com"
         },
         {
             "name": "Ayrton Ricardo da Silva",
-            "homepage": "ayrton_jampa@hotmail.com"
+            "email": "ayrton_jampa@hotmail.com"
         }
     ],
     "require": {
@@ -32,9 +32,10 @@
     },
     "autoload": {
         "psr-0": {
-            "Umbrella\\YA\\Demo": ""
-        },
-        "classmap": ["../ya-boleto-php", "../ya-boleto-api"]
+            "Umbrella\\Ya\\Demo\\": "",
+            "Umbrella\\Ya\\Boleto\\": "../ya-boleto-php",
+            "Umbrella\\Ya\\Api\\Boleto\\": "../ya-boleto-api"
+        }
     },
     "target-dir": "Umbrella/YA/Demo"
 }
