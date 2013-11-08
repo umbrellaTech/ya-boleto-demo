@@ -24,7 +24,8 @@
         }
     ],
     "require": {
-        "twig/twig": "~1.10"
+        "twig/twig": "~1.10",
+        "umbrella/boleto": "dev-master"
     },
     "require-dev": {
         "symfony/debug": "2.3.*",
@@ -32,9 +33,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Umbrella\\Ya\\Demo\\": "",
-            "Umbrella\\Ya\\Boleto\\": "../ya-boleto-php",
-            "Umbrella\\Ya\\Api\\Boleto\\": "../ya-boleto-api"
+            "Umbrella\\Ya\\Demo\\": ""
         }
     },
     "target-dir": "Umbrella/YA/Demo"
