@@ -17,7 +17,7 @@ $sacado = new \Umbrella\Ya\Boleto\Sacado($pf);
 $cedente = new \Umbrella\Ya\Boleto\Cedente("Cendente 01", "92.559.708/0001-03");
 
 $boletoBB = new \Umbrella\Ya\Boleto\Boleto\BancoBrasil($sacado, $cedente, $convenio);
-$boletoBB->setValorDocumento("1500")
+$boletoBB->setValorDocumento(1000.567)
         ->setNumeroDocumento("23456")
         ->setDataVencimento(new DateTime("2013-11-02"))
         ->setInstrucoes(array(
@@ -38,6 +38,7 @@ $loader = new \Twig_Loader_Filesystem(array(
         ));
 
 $engine = new \Twig_Environment($loader, $options);
+$engine->getExtension('core')->setNumberFormat(2, ',', '.');
 
 echo $engine->render('BancoBrasil.html.twig', array(
     'model' => $boletoBB

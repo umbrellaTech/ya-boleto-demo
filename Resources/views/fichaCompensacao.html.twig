@@ -80,7 +80,7 @@
             <!--valor-->
             <div class="valor item">
                 <label>(x) Valor</label>
-                {{ model.getValorDocumento() }}
+                {{ model.getValorDocumento()|number_format }}
             </div>
         </div>
 
@@ -109,7 +109,7 @@
         </div>
         <div class="">
             <label>(=) Valor do documento</label>
-            {{ model.getValorDocumento() }}
+            {{ model.getValorDocumento()|number_format }}
         </div>
         <div class="">
             <label>(-) Desconto/Abatimento</label>
@@ -129,6 +129,7 @@
         </div>
         <div class="">
             <label>(=) Valor cobrado</label>
+            {{ model.getTotal()|number_format }}
         </div>
     </div>
 
