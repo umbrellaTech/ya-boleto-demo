@@ -94,6 +94,7 @@ div#ficha_compensacao{
 #ficha_compensacao #sacado{
     border-bottom:1px solid #c0c0c0;
 }
+
 #ficha_compensacao #codigo_barras{
 
 }
@@ -130,4 +131,39 @@ div#ficha_compensacao{
 }
 .linha_corte label, .autenticacao_mecanica label{
     text-align:right;
+}
+
+.barcode {
+    height: 50px;
+}
+
+.barcode div {
+    display: inline-block;
+    height: 100%;
+}
+
+.barcode .black {
+    border-color: #000;
+    border-left-style: solid;
+    width: 0px;
+}
+
+.barcode .white {
+    background: #fff;
+}
+
+.barcode .thin.black {
+    border-left-width: 1px;
+}
+
+.barcode .large.black {
+    border-left-width: 3px;
+}
+
+.barcode .thin.white {
+    width: 1px;
+}
+
+.barcode .large.white {
+    width: 3px;
 }
