@@ -25,7 +25,7 @@
     ],
     "require": {
         "twig/twig": "~1.10",
-        "umbrella/boleto": "dev-master"
+        "umbrella/boleto": "v1.4.2"
     },
     "require-dev": {
         "symfony/debug": "2.3.*",
