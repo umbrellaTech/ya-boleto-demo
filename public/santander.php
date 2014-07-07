@@ -1,13 +1,13 @@
 <?php
 
 //3936813
-$bancoSantander = new \Umbrella\Ya\Boleto\Banco\Santander("3857", "6188974");
+$bancoSantander = new \Umbrella\Ya\Boleto\Bancos\Santander\Santander("3857", "6188974");
 $bancoSantander->setIos("0");
 
-$carteira102 = new \Umbrella\Ya\Boleto\Carteira\Santander\Carteira102("2");
-$convenioSantander = new \Umbrella\Ya\Boleto\Convenio($bancoSantander, $carteira102, "0033418619006188974");
+$carteira102 = new \Umbrella\Ya\Boleto\Bancos\Santander\Carteira\Carteira102("2");
+$convenioSantander = new \Umbrella\Ya\Boleto\Bancos\Santander\Convenio($bancoSantander, $carteira102, "0033418619006188974", "");
 
-$boletoSantander = new \Umbrella\Ya\Boleto\Boleto\Santander($sacado, $cedente, $convenioSantander);
+$boletoSantander = new \Umbrella\Ya\Boleto\Bancos\Santander\Boleto\Santander($sacado, $cedente, $convenioSantander);
 $boletoSantander
         ->setLocalPagamento("Pagável em qualquer banco")
         ->setValorDocumento(1.00)

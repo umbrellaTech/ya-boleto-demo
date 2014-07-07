@@ -1,10 +1,10 @@
 <?php
 
-$banco = new \Umbrella \Ya\Boleto\Banco\BancoBrasil("2332-9", "6166-2");
-$carteira = new \Umbrella\Ya\Boleto\Carteira\BancoBrasil\Carteira187("125");
-$convenio = new \Umbrella\Ya\Boleto\Convenio($banco, $carteira, "1643044");
+$banco = new \Umbrella\Ya\Boleto\Bancos\BancoBrasil\BancoBrasil("2332-9", "6166-2");
+$carteira = new \Umbrella\Ya\Boleto\Bancos\BancoBrasil\Carteira\Carteira18("125");
+$convenio = new \Umbrella\Ya\Boleto\Bancos\BancoBrasil\Convenio($banco, $carteira, "1643044", "1234567");
 
-$boletoBB = new \Umbrella\Ya\Boleto\Boleto\BancoBrasil($sacado, $cedente, $convenio);
+$boletoBB = new \Umbrella\Ya\Boleto\Bancos\BancoBrasil\Boleto\BancoBrasil($sacado, $cedente, $convenio);
 $boletoBB->setValorDocumento(187.25)
         ->setNumeroDocumento("125")
         ->setDataVencimento(new DateTime("2013-11-08"))
