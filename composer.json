@@ -1,5 +1,5 @@
 {
-    "name": "umbrella/demo",
+    "name": "umbrella/ya-boleto-demo",
     "type": "library",
     "description": "Demonstracao",
     "keywords": [],
@@ -15,21 +15,18 @@
             "email": "mikhailcavalcanti@gmail.com"
         },
         {
-            "name": "Genison Ribeiro de Paiva Junior",
-            "email": "genison@gmail.com"
-        },
-        {
             "name": "Ayrton Ricardo da Silva",
             "email": "ayrton_jampa@hotmail.com"
         }
     ],
     "require": {
         "twig/twig": "~1.10",
-        "umbrella/boleto": "v1.4.2"
+        "umbrella/boleto": "~1.4",
+        "umbrella/retorno-boleto": "~1.3"
     },
     "require-dev": {
-        "symfony/debug": "2.3.*",
-        "phpunit/phpunit": "3.7.*"
+        "symfony/debug": "~2.5",
+        "phpunit/phpunit": "~4.1"
     },
     "autoload": {
         "psr-0": {

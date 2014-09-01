@@ -1,0 +1,24 @@
+{% extends "retornoLayout.html.twig" %}
+
+{% block container %}
+    {% for lote in model.getLotes() %}
+        <table>
+            <thead>
+                <tr>
+                    <td>Registro</td>
+                    <td>Agencia - Cedente</td>
+                    <td>Conta - Cedente</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for detail in lote.getDetails() %}
+                    <tr>
+                        <td>{{ detail.getRegistro() }}</td>
+                        <td>{{ detail.getCedente().getBanco().getAgencia() }}</td>
+                        <td>{{ detail.getCedente().getBanco().getConta() }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}

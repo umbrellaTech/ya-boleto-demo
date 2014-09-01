@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Boleto {{ model.getBanco().getName() }}</title>
         <meta charset="UTF-8">
-        <link href="css/default.css" rel="stylesheet" type="text/css" >
     {% block styles %}{% endblock %}
 </head>
-
 <body>
     <!--    DIV CENTRAL    -->
     <div id="container">
         <!--DIV FICHA DE COMPENSACAO-->
-    {% block compensacao %}{% endblock %}
+    {% block container %}{% endblock %}
 </div>
 </body>
 </html>
