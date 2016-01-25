@@ -97,15 +97,15 @@
     <div id="colunadireita" class="">
         <div class="">
             <label>Vencimento</label>
-            {{ model.getVencimento()|date("d/m/Y") }}
+            {{ model.getDataVencimento()|date("d/m/Y") }}
         </div>
         <div class="">
             <label>Agência / Código cedente </label>
-            {{ model.getConvenio().getBanco().getAgenciaCodigoCedente() }}
+            {{ model.getConvenio().getBanco().getAgencia() }} / {{ model.getConvenio().getBanco().getConta() }}
         </div>
         <div class="">
             <label>Nosso número</label>
-            {{ model.getConvenio().getCarteira().getNossoNumero() }}
+            {{ model.getConvenio().getNossoNumero() }}
         </div>
         <div class="">
             <label>(=) Valor do documento</label>
