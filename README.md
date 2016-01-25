@@ -33,4 +33,4 @@ Para os arquivos de retorno basta acessar:
 
 * /web/retorno/index.php
 
-Não existem layouts bem feitos, por tanto agradeço a ajuda se você quiser melhroar o layout das aplicações de demonstração.
+Não existem layouts bem feitos, por tanto agradeço a ajuda se você quiser melhorar o layout das aplicações de demonstração.
