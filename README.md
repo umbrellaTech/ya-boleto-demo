@@ -12,7 +12,11 @@ Instalação
 ----------
 
 ```shell
-$ php composer.phar create-project umbrella/ya-boleto-demo path/to/install
+# Install Composer
+$ curl -sS https://getcomposer.org/installer | php
+
+# Adicionando Ya Boleto Demo como dependencia
+$ php composer.phar create-project umbrella/ya-boleto-demo=dev-master path/to/install
 ``` 
 
 Acessando a aplicação demo
