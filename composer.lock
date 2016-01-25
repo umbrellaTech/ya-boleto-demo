@@ -1,0 +1,463 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "05288d94b98dd398675482c75d7ea3a8",
+    "content-hash": "7a3f5f175efff461a32851706afdf418",
+    "packages": [
+        {
+            "name": "asm89/rx.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/Rx.PHP.git",
+                "reference": "0a44a04605a91c3d00008a77f40378f89609836e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/Rx.PHP/zipball/0a44a04605a91c3d00008a77f40378f89609836e",
+                "reference": "0a44a04605a91c3d00008a77f40378f89609836e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "react/event-loop": "0.3.*@dev",
+                "react/promise": "~2.2"
+            },
+            "suggest": {
+                "react/event-loop": "For using event-loop based scheduling.",
+                "react/promise": "For converting promises to and from observables."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Rx\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Reactive extensions for php.",
+            "homepage": "https://github.com/asm89/Rx.PHP",
+            "keywords": [
+                "extensions",
+                "reactive",
+                "rx"
+            ],
+            "time": "2015-11-09 09:20:21"
+        },
+        {
+            "name": "easyframework/collections",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/italolelis/collections.git",
+                "reference": "adaec5ca53c4afd9337ceb83125264f454c3149c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/italolelis/collections/zipball/adaec5ca53c4afd9337ceb83125264f454c3149c",
+                "reference": "adaec5ca53c4afd9337ceb83125264f454c3149c",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/rx.php": "~0.3",
+                "easyframework/generics": "~2.0",
+                "php": ">=5.4.0",
+                "symfony/property-access": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "symfony/var-dumper": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Collections\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ítalo Lelis de Vietro",
+                    "email": "italolelis@gmail.com"
+                }
+            ],
+            "description": "Collections Abstraction library for PHP",
+            "homepage": "https://github.com/italolelis/collections",
+            "keywords": [
+                "collection",
+                "easy",
+                "framework",
+                "generics"
+            ],
+            "time": "2015-12-23 09:03:27"
+        },
+        {
+            "name": "easyframework/generics",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/italolelis/generics.git",
+                "reference": "aa473480dc68b0daf9de4387a22a32cf254489e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/italolelis/generics/zipball/aa473480dc68b0daf9de4387a22a32cf254489e8",
+                "reference": "aa473480dc68b0daf9de4387a22a32cf254489e8",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ítalo Lelis de Vietro",
+                    "email": "italolelis@lellysinformatica.com"
+                }
+            ],
+            "description": "Easy Framework Generics Component",
+            "homepage": "http://easyframework.net/",
+            "keywords": [
+                "easy",
+                "framework",
+                "generics"
+            ],
+            "time": "2015-12-17 15:36:11"
+        },
+        {
+            "name": "symfony/property-access",
+            "version": "2.8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-access.git",
+                "reference": "f58bd65f1e985f4192eedbf0b2a818a220eccadc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/f58bd65f1e985f4192eedbf0b2a818a220eccadc",
+                "reference": "f58bd65f1e985f4192eedbf0b2a818a220eccadc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyAccess\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony PropertyAccess Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "access",
+                "array",
+                "extraction",
+                "index",
+                "injection",
+                "object",
+                "property",
+                "property path",
+                "reflection"
+            ],
+            "time": "2016-01-03 15:33:41"
+        },
+        {
+            "name": "twig/twig",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "24d9266d0f1c2b4426ad8f931be30718cace4180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/24d9266d0f1c2b4426ad8f931be30718cace4180",
+                "reference": "24d9266d0f1c2b4426ad8f931be30718cace4180",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.23-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-01-11 14:50:45"
+        },
+        {
+            "name": "umbrella/boleto",
+            "version": "dev-feature/2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umbrellaTech/ya-boleto-php.git",
+                "reference": "97d07586ac7ea43eea9098c4f9a54903da45a5ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umbrellaTech/ya-boleto-php/zipball/97d07586ac7ea43eea9098c4f9a54903da45a5ea",
+                "reference": "97d07586ac7ea43eea9098c4f9a54903da45a5ea",
+                "shasum": ""
+            },
+            "require": {
+                "easyframework/collections": "dev-master",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Umbrella\\YaBoleto\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Italo Lelis de Vietro",
+                    "email": "italolelis@lellysinforamtica.com"
+                },
+                {
+                    "name": "Mikhail Leite Cavalcanti",
+                    "email": "mikhailcavalcanti@gmail.com"
+                },
+                {
+                    "name": "Genison Ribeiro de Paiva Junior",
+                    "email": "genison@gmail.com"
+                },
+                {
+                    "name": "Ayrton Ricardo da Silva",
+                    "email": "ayrton_jampa@hotmail.com"
+                },
+                {
+                    "name": "Ian da Silva Rodrigues",
+                    "email": "me@ianrodrigu.es"
+                }
+            ],
+            "description": "YaBoleto é uma biblioteca para geração de boletos bancários de forma simples em PHP.",
+            "homepage": "https://github.com/umbrellaTech/ya-boleto-php",
+            "time": "2016-01-17 23:29:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-01-06 21:40:42"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "2.8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "386364a0e71158615ab9ae76b74bf84efc0bac7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/386364a0e71158615ab9ae76b74bf84efc0bac7e",
+                "reference": "386364a0e71158615ab9ae76b74bf84efc0bac7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+            },
+            "require-dev": {
+                "symfony/class-loader": "~2.2|~3.0.0",
+                "symfony/http-kernel": "~2.3.24|~2.5.9|~2.6,>=2.6.2|~3.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-13 10:28:07"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "umbrella/boleto": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

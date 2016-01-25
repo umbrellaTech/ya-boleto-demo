@@ -12,7 +12,6 @@ tmp/*
 .idea
 .project
 .settings
-composer.lock
 /resources/cache
 /resources/cache/*
 resources/cache

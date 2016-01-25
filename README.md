@@ -21,12 +21,20 @@ Acessando a aplicação demo
 Para os boletos temos apenas os exemplos para o BB, Santander e Real, mas você pode facilmente integrar um novo layout de boleto.
 Na sua url acesse a seguinte página:
 
-* /web/boleto/index.php?banco=bb
-* /web/boleto/index.php?banco=santander
-* /web/boleto/index.php?banco=real
+```sh
+$ php -S localhost:8888 -t web/ web/boleto/index.php
+```
+
+* http://localhost:8888/?banco=bb
+* http://localhost:8888/?banco=santander
+* http://localhost:8888/?banco=real
 
 Para os arquivos de retorno basta acessar:
 
-* /web/retorno/index.php
+```sh
+$ php -S localhost:8888 -t web/ web/retorno/index.php
+```
+
+* http://localhost:8888
 
 Não existem layouts bem feitos, por tanto agradeço a ajuda se você quiser melhroar o layout das aplicações de demonstração.
